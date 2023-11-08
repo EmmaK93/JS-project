@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    background-color: #F0EFE9;
+    padding: 15px;
+    color: #191919;
+  }
+  header .container {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .container .menu-bar {
+    border: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+  }
+  @media (min-width: 992px) {
+    header .container .menu-bar {
+      display: none;
+    }
+  }
+  header .container .menu {
+    flex: 1;
+    display: none;
+    padding-left: 70px;
+  }
+  @media (min-width: 992px) {
+    header .container .menu {
+      display: block;
+    }
+}
