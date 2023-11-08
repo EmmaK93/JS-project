@@ -1,0 +1,32 @@
+.article {
+    background-color: white;
+    padding: 100px;
+  }
+  .article .container {
+    display: block;
+  }
+  .article .container .Art-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .article .container .art-menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+  }
+  .article .container .art-menu a {
+    text-decoration: none;
+    color: #0E1021;
+  }
+  .article .container .art-menu a:hover {
+    color: #605f5f;
+  }
+  .article .container .art-menu .art-box h3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .article .container .art-menu .art-box .art-title {
+    color: #F94D1C;
+  }

@@ -1,0 +1,42 @@
+.Testimonial .container .review {
+    background-color: white;
+    display: block;
+    padding: 100px;
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+  .Testimonial .container .review .section-title {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .Testimonial .container .review .section-title .orange {
+    color: #F94D1C;
+    font-size: 1.13rem;
+    display: flex;
+    justify-content: center;
+  }
+  .Testimonial .container .review .section-title h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    display: flex;
+    justify-content: center;
+  }
+  .Testimonial .container .review .re-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  .Testimonial .container .review .re-box .review-box {
+    margin: 40px;
+  }
+  .Testimonial .container .review .re-box .review-box i {
+    color: #F94D1C;
+  }
+  .Testimonial .container .review .Btn-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
