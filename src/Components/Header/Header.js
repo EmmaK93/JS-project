@@ -7,6 +7,8 @@ import ShowCaseSection from '../ShowCase/ShowCaseSection';
 const Header = () => {
   return (
     <>
+      
+      
       <NavSection/>
       <ShowCaseSection/>
 

@@ -1,8 +1,11 @@
 import React from 'react'
 import './ShowCase.css'
+import '../Buttons/Buttons.css'
+import '../Title/Title.css'
 
 
 import img_WhiteLines from '../../Assets/images/vit-linje-v.svg'
+import img_man from '../../Assets/images/Image.png'
 
 const ShowCaseSection = () => {
   return (
@@ -22,7 +25,7 @@ const ShowCaseSection = () => {
     </div>
 </div>
 <div className="pic-1">
-    <img src="/assets/images/Image.png" alt="Picture of a business man"/>
+    <img src={img_man} alt="Picture of a business man"/>
 </div>
 </div>
 </section>

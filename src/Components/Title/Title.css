@@ -1,0 +1,13 @@
+.section-title {
+    padding-top: 120px;
+  }
+  .section-title p {
+    color: #F94D1C;
+    font-size: 1.25rem;
+  }
+  .section-title h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 70px;
+  }

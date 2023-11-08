@@ -1,11 +1,14 @@
 import React from 'react'
 import './Nav.css';
+import '../Buttons/Buttons.css'
+import '../Title/Title.css'
 
 import img_logotype from '../../Assets/images/Logo.svg';
 
 const NavSection = () => {
   return (
-    <div className="container">
+    <header>
+        <div className="container">
             <a href="index.html"><img src={img_logotype} alt="Crito Logotype"/></a>
             <a href="#" target="_blank"><button className="menu-bar"><i className="fa-solid fa-ellipsis"></i></button></a>
             <div className="menu">
@@ -15,6 +18,7 @@ const NavSection = () => {
                         <div className="content-box"><i className="fa-regular fa-envelope"></i>info@crito.com</div>
                         <div className="content-box last"><i className="fa-solid fa-location-dot"></i>Sveavägen 31, 111 34 STOCKHOLM</div>
                     </div>
+
                     <div className="social">
                         <a href="https://facebook.com" target="_blank"><i className="fa-brands fa-facebook"></i></a>
                         <a href="https://twitter.com" target="_blank"><i className="fa-brands fa-twitter"></i></a>
@@ -22,8 +26,8 @@ const NavSection = () => {
                         <a href="https://linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                     </div>               
                 </div>
+
                 <div className="bottom-menu">        
-                    
                     <nav>
                         <a href="/HTML/index.html" target="_blank">Home</a>
                         <a href="#" target="_blank">Service</a>
@@ -39,6 +43,7 @@ const NavSection = () => {
                 </div>
             </div>
         </div>
+    </header>
   )
 }
 

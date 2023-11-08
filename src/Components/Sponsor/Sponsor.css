@@ -1,0 +1,7 @@
+.sponsor {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .sponsor img {
+    padding: 50px;
+  }

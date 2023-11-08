@@ -1,0 +1,64 @@
+.About {
+    padding-bottom: 100px;
+  }
+  .About .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .About .container img {
+    margin-right: 200px;
+    margin-top: 120px;
+  }
+  .About .container .blue-box {
+    position: absolute;
+    background-color: #BEEBFF;
+    display: inline-block;
+    left: 0;
+    bottom: 30px;
+    padding: 20px 20px 50px 20px;
+    width: 368px;
+    height: auto;
+  }
+  .About .container .blue-box .box-title {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .About .container .blue-box .box-title h3 {
+    display: inline;
+    font-size: 1.25rem;
+  }
+  .About .container .blue-box .box-title .orange {
+    display: inline;
+    color: #F94D1C;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .About .container .para-text {
+    line-height: 2;
+    padding-bottom: 100px;
+  }
+  .About .container .Btn-black {
+    margin-right: 20px;
+  }
+  .About .container .Btn-black a {
+    text-decoration: none;
+    color: white;
+  }
+  .About .container .Btn-black a:hover {
+    background-color: transparent;
+    color: #191919;
+  }
+  .About .container a {
+    text-decoration: none;
+    color: #191919;
+  }
+  .About .container a:hover {
+    color: #DAD9D3;
+  }
+  .About .container .play {
+    padding-right: 5px;
+  }
+  
