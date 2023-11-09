@@ -10,7 +10,7 @@ const FeatureSection = () => {
   return (
     <section className="Feature-sec">
         <div className="container Features">
-            <div class="section-title">
+            <div className="section-title">
                 <p>Features</p>
                 <h2>Our Accounting is trusted by thousand of companies</h2>
                 <Button type="yellow" Title="Learn More" url="/Feature/Learnmore"/>
