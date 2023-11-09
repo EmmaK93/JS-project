@@ -1,7 +1,7 @@
 import React from 'react'
 import './Testimonial.css'
-import '../Buttons/Buttons.css'
-import '../Title/Title.css'
+import '../Generics/Buttons/Buttons.css'
+import '../Generics/Title/Title.css'
 
 import img_Ellipse1 from '../../Assets/images/Ellipse 1.png'
 import img_Ellipse2 from '../../Assets/images/Ellipse 2.png'

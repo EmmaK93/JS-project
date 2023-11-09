@@ -19,9 +19,10 @@ import TestimonialSection from './Components/Testimonial/TestimonialSection';
 function App() {
   return (
     <>
-    <div className="container">
+    
         
       <Header/>
+      <main>
       <SponsorSection/>
       <FeatureSection/>
       <AboutSection/>
@@ -33,9 +34,9 @@ function App() {
       <ArticleSection/>
       <NewSection/>
       <FooterSection/>
-      
+      </main>
         
-      </div>
+      
     
     
     </>

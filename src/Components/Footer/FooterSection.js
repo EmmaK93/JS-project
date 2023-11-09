@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
-import '../Buttons/Buttons.css'
-import '../Title/Title.css'
+import '../Generics/Buttons/Buttons.css'
+import '../Generics/Title/Title.css'
 
 import img_WhiteLinesFooter from '../../Assets/images/vit-linje-footer.svg'
 import img_logotypeDark from '../../Assets/images/Logo.dark.svg'

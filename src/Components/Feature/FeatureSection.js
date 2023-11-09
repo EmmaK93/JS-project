@@ -1,7 +1,7 @@
 import React from 'react'
 import './Feature.css'
-import '../Buttons/Buttons.css'
-import '../Title/Title.css'
+import '../Generics/Buttons/Buttons.css'
+import '../Generics/Title/Title.css'
 
 const FeatureSection = () => {
   return (

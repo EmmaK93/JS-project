@@ -1,13 +1,14 @@
 import React from 'react'
 
 import './Project.css'
-import '../Buttons/Buttons.css'
-import '../Title/Title.css'
+import '../Generics/Buttons/Buttons.css'
+import '../Generics/Title/Title.css'
 
 import img_business1 from '../../Assets/images/imgbusn1.png'
 import img_business3 from '../../Assets/images/imgbusn3.png'
 import img_business2 from '../../Assets/images/imgbusn2.png'
 import img_business4 from '../../Assets/images/imgbusn4.png'
+import ButtonBlack from '../Generics/Buttons/ButtonBlack'
 
 const ProjectSection = () => {
   return (
@@ -47,9 +48,7 @@ const ProjectSection = () => {
 
         </div>
         <div class="Btn-sec">
-            <a href="#" target="_blank">
-            <button class="Btn-black">All Recent Projects<i class="fa-solid fa-square-arrow-up-right"></i></button>
-            </a>
+            <ButtonBlack Title="All Recent Projects" url="/Project/Moreprojects"/>
         </div>
     </div>
 </section>

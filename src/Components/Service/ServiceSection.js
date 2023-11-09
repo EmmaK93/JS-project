@@ -1,46 +1,31 @@
 import React from 'react'
 
 import './Service.css'
-import '../Buttons/Buttons.css'
-import '../Title/Title.css'
+import '../Generics/Buttons/Buttons.css'
+import '../Generics/Buttons/ButtonYellow'
+import '../Generics/Title/Title.css'
+import BoxItem from './BoxItem'
+import TitleSection from '../Generics/Title/TitleSection'
+
+import img_BackgroundLinesWhite from '../../Assets/images/vita-linjer.svg'
+import ButtonTrans from '../Generics/Buttons/ButtonTrans'
 
 const ServiceSection = () => {
   return (
     <section className="Service">
-        <img className="background-lines"src="/assets/images/vita-linjer.svg" alt=""/>
+        <img className="background-lines"src={img_BackgroundLinesWhite} alt=""/>
         <div className="container">
-            <div className="section-title">
-                <p>Our Services</p>
-                <h2>We Provide The Best Service For Consulting</h2>
-            </div>
+                <TitleSection smallTitle="Our Services" Title="We Provide The Best Service For Consulting"/>
             <div className="boxtext">
                 
-                <box className="boxitem"> 
-                    <h3>Business Advice</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                    <a href="#" target="_blank"><botton className="Btn-arrow"><i className="fa-solid fa-arrow-right"></i></botton></a>
-                </box>
-                <box className="boxitem">
-                    <h3>Startup Business</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                    <a href="#" target="_blank"><botton className="Btn-arrow"><i className="fa-solid fa-arrow-right"></i></botton></a>
-                </box>
-                <box className="boxitem">
-                    <h3>Financial Advice</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                    <a href="#" target="_blank"><botton className="Btn-arrow"><i className="fa-solid fa-arrow-right"></i></botton></a>
-                </box>
-                <box className="boxitem">
-                    <h3>Risk Management</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                    <a href="#" target="_blank"><botton className="Btn-arrow"><i className="fa-solid fa-arrow-right"></i></botton></a>
-                </box>
+                <BoxItem Title= "Business Advice" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/Services/Businessadvice"/>
+                <BoxItem Title= "Startup Business" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/Services/Startupbusiness"/>
+                <BoxItem Title= "Financial Advice" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/Services/Financialadvice"/>
+                <BoxItem Title= "Risk Management" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/Services/Riskmanagement"/>
                 
             </div>
             <div className="Btn-sec">
-                <a href="#" target="_blank">
-                <button className="Btn-trans">Browse Services<i className="fa-solid fa-square-arrow-up-right"></i></button>
-                </a>
+                <ButtonTrans Title="Browse Services" url="/Services/Browseservices"/>
             </div>
             
         </div>

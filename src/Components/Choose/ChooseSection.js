@@ -1,8 +1,8 @@
 import React from 'react'
 
 import './Choose.css'
-import '../Buttons/Buttons.css'
-import '../Title/Title.css'
+import '../Generics/Buttons/Buttons.css'
+import '../Generics/Title/Title.css'
 import img_BeigeBox from '../../Assets/images/Beige-ruta.svg'
 import img_WomenTalk from '../../Assets/images/Image3.png'
 

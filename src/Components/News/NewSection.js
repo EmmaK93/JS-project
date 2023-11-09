@@ -1,7 +1,7 @@
 import React from 'react'
 import './News.css'
-import '../Buttons/Buttons.css'
-import '../Title/Title.css'
+import '../Generics/Buttons/Buttons.css'
+import '../Generics/Title/Title.css'
 
 import img_GreyLines from '../../Assets/images/grey-line.svg'
 

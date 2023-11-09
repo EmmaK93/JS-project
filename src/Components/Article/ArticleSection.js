@@ -1,8 +1,8 @@
 import React from 'react'
 
 import './Article.css'
-import '../Buttons/Buttons.css'
-import '../Title/Title.css'
+import '../Generics/Buttons/Buttons.css'
+import '../Generics/Title/Title.css'
 
 
 import img_art1 from '../../Assets/images/art.1.png'
