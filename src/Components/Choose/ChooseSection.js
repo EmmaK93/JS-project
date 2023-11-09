@@ -6,9 +6,17 @@ import './Choose.css'
 
 import img_BeigeBox from '../../Assets/images/Beige-ruta.svg'
 import img_WomenTalk from '../../Assets/images/Image3.png'
+import ColumnChoose from './ColumnChoose'
 
 
 const ChooseSection = () => {
+
+    const Column =[
+        {icon:"fa-regular fa-thumbs-up", Title:"Process Excellence", text:"Lorem, ipsum dolor sit amet consectetur."},
+        {icon:"fa-brands fa-uncharted", Title:"Strategic Planning", text:"Lorem, ipsum dolor sit amet consectetur."},
+        {icon:"fa-solid fa-paintbrush", Title:"Experience Design", text:"Lorem, ipsum dolor sit amet consectetur."},
+        {icon:"fa-solid fa-robot", Title:"Artificial Inteligence", text:"Lorem, ipsum dolor sit amet consectetur."}
+    ]
   return (
     <section className="Choose">
         <img className="background-box" src={img_BeigeBox} alt=""/>
@@ -17,38 +25,16 @@ const ChooseSection = () => {
                 <TitleSection smallTitle="Why Choose Us" Title="Why We Are The Best Business Consulting Agency"/>
                 
                 <div className="column-item">
+                    {
+                        Column.map((Column)=>(
+                            <ColumnChoose icon={Column.icon} Title={Column.Title} text={Column.text}/>
+                        )
 
-                    <div className="columni">
-                        <i className="fa-regular fa-thumbs-up"></i>
-                        <div className="text-col">
-                            <h3>Process Excellence</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-
-                    <div className="columni">
-                        <i className="fa-brands fa-uncharted"></i>
-                        <div className="text-col">
-                            <h3>Strategic Planning</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-
-                    <div className="columni">
-                        <i className="fa-solid fa-paintbrush"></i>
-                        <div className="text-col">
-                            <h3>Experience Design</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
+                        )
+                    }
                     
-                    <div className="columni">
-                        <i className="fa-solid fa-robot"></i>
-                        <div className="text-col">
-                            <h3>Artificial Inteligence</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
+
+                    
                 </div>
                 
                 
