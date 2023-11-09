@@ -1,9 +1,11 @@
 import React from 'react'
+import Button from '../Generics/Buttons/Button';
+
 import './Nav.css';
-import '../Generics/Buttons/Buttons.css'
-import '../Generics/Title/Title.css'
+
 
 import img_logotype from '../../Assets/images/Logo.svg';
+
 
 const NavSection = () => {
   return (
@@ -38,10 +40,7 @@ const NavSection = () => {
                     </nav>    
                     
                     <div>
-                        
-                        <a href="#" target="_blank">
-                        <button className="Btn-yellow">Log in<i className="fa-solid fa-square-arrow-up-right"></i></button>
-                        </a>
+                        <Button type="yellow" Title="Log in" url="/Home/login"/>
                     </div>
                 </div>
             </div>

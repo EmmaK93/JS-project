@@ -1,28 +1,27 @@
 import React from 'react'
+import TitleSection from '../Generics/Title/TitleSection'
+import Button from '../Generics/Buttons/Button'
 
 import './Article.css'
-import '../Generics/Buttons/Buttons.css'
-import '../Generics/Title/Title.css'
+
 
 
 import img_art1 from '../../Assets/images/art.1.png'
 import img_art2 from '../../Assets/images/art.2.png'
 import img_art3 from '../../Assets/images/art.3.png'
 
+
 const ArticleSection = () => {
   return (
     <section className="article">
             <div className="container">
                 <div className="Art-start">
-                    <div className="section-title">
-                    <p>Article & News</p>
-                    <h2>Get Every Single Articles & News</h2>
-                    </div>
+                    <TitleSection smallTitle="Article & News" Title="Get Every Single Articles & News"/>
+                    
                     <div>
-                        <a href="#" target="_blank">
-                        <button className="Btn-trans">Browse Articles<i className="fa-solid fa-square-arrow-up-right"></i></button>
-                        </a>
+                        <Button type="Trans" Title="Browse Articles" url="/News/Browsearticles"/>
                     </div>
+
                 </div>
                 <div className="art-menu">
                     <a href="#" target="_blank">

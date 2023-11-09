@@ -1,10 +1,12 @@
 import React from 'react'
+import TitleSection from '../Generics/Title/TitleSection'
 
 import './Choose.css'
-import '../Generics/Buttons/Buttons.css'
-import '../Generics/Title/Title.css'
+
+
 import img_BeigeBox from '../../Assets/images/Beige-ruta.svg'
 import img_WomenTalk from '../../Assets/images/Image3.png'
+
 
 const ChooseSection = () => {
   return (
@@ -12,12 +14,10 @@ const ChooseSection = () => {
         <img class="background-box" src={img_BeigeBox} alt=""/>
         <div class="container">
             <div class="choose-us">
-                <div class="section-title">
-                <p>Why Choose Us</p>
-                <h2>Why We Are The Best Business Consulting Agency</h2>
-                </div>
+                <TitleSection smallTitle="Why Choose Us" Title="Why We Are The Best Business Consulting Agency"/>
                 
                 <div class="column-item">
+
                     <div class="columni">
                         <i class="fa-regular fa-thumbs-up"></i>
                         <div class="text-col">
@@ -25,6 +25,7 @@ const ChooseSection = () => {
                             <p>Lorem, ipsum dolor sit amet consectetur.</p>
                         </div>
                     </div>
+
                     <div class="columni">
                         <i class="fa-brands fa-uncharted"></i>
                         <div class="text-col">
@@ -32,6 +33,7 @@ const ChooseSection = () => {
                             <p>Lorem, ipsum dolor sit amet consectetur.</p>
                         </div>
                     </div>
+
                     <div class="columni">
                         <i class="fa-solid fa-paintbrush"></i>
                         <div class="text-col">
@@ -39,6 +41,7 @@ const ChooseSection = () => {
                             <p>Lorem, ipsum dolor sit amet consectetur.</p>
                         </div>
                     </div>
+                    
                     <div class="columni">
                         <i class="fa-solid fa-robot"></i>
                         <div class="text-col">

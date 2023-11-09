@@ -1,4 +1,5 @@
 import React from 'react'
+import './Title.css'
 
 const TitleSection = ({smallTitle, Title}) => {
   return (

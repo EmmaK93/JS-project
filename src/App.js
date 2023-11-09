@@ -5,7 +5,7 @@ import ChooseSection from './Components/Choose/ChooseSection';
 import FeatureSection from './Components/Feature/FeatureSection';
 import FooterSection from './Components/Footer/FooterSection';
 import Header from './Components/Header/Header';
-import NewSection from './Components/News/NewSection';
+import NewsSection from './Components/News/NewsSection';
 import ProjectSection from './Components/Project/ProjectSection';
 import ServiceSection from './Components/Service/ServiceSection';
 import SponsorSection from './Components/Sponsor/SponsorSection';
@@ -32,7 +32,7 @@ function App() {
       <TeamSection/>
       <TestimonialSection/>
       <ArticleSection/>
-      <NewSection/>
+      <NewsSection/>
       <FooterSection/>
       </main>
         

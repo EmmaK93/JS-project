@@ -1,10 +1,13 @@
 import React from 'react'
+import Button from '../Generics/Buttons/Button'
+import TitleSection from '../Generics/Title/TitleSection'
 
 import './About.css'
-import '../Generics/Buttons/Buttons.css'
-import '../Generics/Title/Title.css'
+
 
 import img_woman from '../../Assets/images/Image.jpg'
+
+
 
 const AboutSection = () => {
   return (
@@ -21,17 +24,10 @@ const AboutSection = () => {
                 </div>
             </div>
             <div>
-                <div className="section-title">
-                    <p>About Company</p>
-                    <h2>We Are Business Consulting & Credit Repair Experts</h2>
-                </div>
+                <TitleSection smallTitle="About Company" Title="We Are Business Consulting & Credit Repair Experts"/>
                     <p className="para-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
-                    <a href="#" target="_blank">    
-                    <button className="Btn-black">Learn more<i className="fa-solid fa-square-arrow-up-right"></i></button>
-                    </a>
-                    <a href="#" target="_blank">
-                    <button className="Btn-trans"><i className="fa-regular fa-circle-play play"></i>intro video</button>
-                    </a>
+                    <Button type="black" Title="Learn More" url="/Home/Learnmore"/>
+                    <Button type="trans" Title="Intro Video" url="/Home/Learnmore/Introvideo"/>
                 </div>
             </div>
             

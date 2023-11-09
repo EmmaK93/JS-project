@@ -1,14 +1,14 @@
 import React from 'react'
-
-import './Service.css'
-import '../Generics/Buttons/Buttons.css'
-import '../Generics/Buttons/ButtonYellow'
-import '../Generics/Title/Title.css'
 import BoxItem from './BoxItem'
 import TitleSection from '../Generics/Title/TitleSection'
+import Button from '../Generics/Buttons/Button'
+
+import './Service.css'
+
 
 import img_BackgroundLinesWhite from '../../Assets/images/vita-linjer.svg'
-import ButtonTrans from '../Generics/Buttons/ButtonTrans'
+
+
 
 const ServiceSection = () => {
   return (
@@ -25,7 +25,7 @@ const ServiceSection = () => {
                 
             </div>
             <div className="Btn-sec">
-                <ButtonTrans Title="Browse Services" url="/Services/Browseservices"/>
+                <Button typw="Trans" Title="Browse Services" url="/Services/Browseservices"/>
             </div>
             
         </div>
