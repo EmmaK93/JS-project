@@ -8,6 +8,7 @@
     font-size: 1rem;
     background-color: #F9D783;
     transition: background-color 0.3s ease-in-out;
+  
   }
   .Btn-yellow:hover {
     background-color: rgb(7, 7, 7);
