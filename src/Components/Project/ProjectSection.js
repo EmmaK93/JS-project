@@ -12,13 +12,17 @@ import img_business4 from '../../Assets/images/imgbusn4.png'
 
 
 
+
 const ProjectSection = () => {
+
+
   return (
     <section className="Projects">
     <div className="container">
             <TitleSection smallTitle="Project & Case Studies" Title="Let's Looks Our Global Projects"/>
         <div className="grid-project">
         
+   
             <div className="grid-pic">
                 <a href="#" target="_blank"><img src={img_business1} alt="Man reading a newspaper"/></a>
                 <h3>Grow your business</h3>

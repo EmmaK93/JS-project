@@ -8,13 +8,13 @@ const Button = ({type, Title, url}) => {
         switch (type){
             case 'yellow':
                 return 'Btn-yellow'
-
+            
             case 'black':
                 return 'Btn-black'
-
+            
             default:
                 return 'Btn-trans'
-
+            
         }
     }
   return (

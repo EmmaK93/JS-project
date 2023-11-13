@@ -26,8 +26,8 @@ const ChooseSection = () => {
                 
                 <div className="column-item">
                     {
-                        Column.map((Column)=>(
-                            <ColumnChoose icon={Column.icon} Title={Column.Title} text={Column.text}/>
+                        Column.map((Column, index)=>(
+                            <ColumnChoose key={index} icon={Column.icon} Title={Column.Title} text={Column.text}/>
                         )
 
                         )
