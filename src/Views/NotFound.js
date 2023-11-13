@@ -11,7 +11,9 @@ const NotFound = () => {
     <>
     <Header/>
     <main>
+      <div className="picture container">
       <img src={img_notFound} alt="Page not found"/>
+      </div> 
     </main>
     <FooterSection/>
     </>

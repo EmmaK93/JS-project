@@ -33,10 +33,10 @@ const NavSection = () => {
                 <div className="bottom-menu">  
                          
                     <nav>
-                        <a href="/HTML/index.html" target="_blank">Home</a>
+                        <a href="./" target="_blank">Home</a>
                         <a href="/HTML/service.html" target="_blank">Service</a>
                         <a href="/HTML/news.html"target="_blank">News</a>
-                        <a href="/HTML/contact.html" target="_blank">Contact</a>
+                        <a href="./contact" target="_blank">Contact</a>
                     </nav>    
                     
                     <div>
