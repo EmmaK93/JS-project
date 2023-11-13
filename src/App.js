@@ -1,44 +1,23 @@
 import './App.css';
-import AboutSection from './Components/About/AboutSection';
-import ArticleSection from './Components/Article/ArticleSection';
-import ChooseSection from './Components/Choose/ChooseSection';
-import FeatureSection from './Components/Feature/FeatureSection';
-import FooterSection from './Components/Footer/FooterSection';
-import Header from './Components/Header/Header';
-import NewsSection from './Components/News/NewsSection';
-import ProjectSection from './Components/Project/ProjectSection';
-import ServiceSection from './Components/Service/ServiceSection';
-import SponsorSection from './Components/Sponsor/SponsorSection';
-import TeamSection from './Components/Team/TeamSection';
-import TestimonialSection from './Components/Testimonial/TestimonialSection';
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom'; 
+import Home from './Views/Home';
+import Contact from './Views/Contact';
+import NotFound from './Views/NotFound';
 
 
 
 
 function App() {
   return (
-    <>
-    
-        
-      <Header/>
-      <main>
-      <SponsorSection/>
-      <FeatureSection/>
-      <AboutSection/>
-      <ServiceSection/>
-      <ChooseSection/>
-      <ProjectSection/>
-      <TeamSection/>
-      <TestimonialSection/>
-      <ArticleSection/>
-      <NewsSection/>
-      <FooterSection/>
-      </main>
-        
+    <>  
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='*' element={<NotFound/>}/>
+      </Routes>
+    </BrowserRouter>
       
-    
-    
     </>
   );
 }
