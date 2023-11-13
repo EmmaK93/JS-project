@@ -13,11 +13,11 @@ const SponsorSection = () => {
   return (
     <section className="sponsor">
         <div className="container">
-            <img src={img_8}/><a src="#"></a>
-            <img src={img_7}/><a src="#"></a>
-            <img src={img_6}/><a src="#"></a>
-            <img src={img_9}/><a src="#"></a>
-            <img src={img_10}/><a src="#"></a>
+            <img src={img_8} alt="Sponsor logotype"/><a src="#"></a>
+            <img src={img_7} alt="Sponsor logotype"/><a src="#"></a>
+            <img src={img_6} alt="Sponsor logotype"/><a src="#"></a>
+            <img src={img_9} alt="Sponsor logotype"/><a src="#"></a>
+            <img src={img_10} alt="Sponsor logotype"/><a src="#"></a>
         </div>
         </section>
   )

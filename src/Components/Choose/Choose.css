@@ -1,43 +1,43 @@
 .Choose {
-    position: relative;
+  position: relative;
   }
-  .Choose .background-box {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    width: 55%;
+.Choose .background-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 55%;
   }
-  .Choose .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 100px;
+.Choose .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
   }
-  .Choose img {
+.Choose img {
     height: 450px;
     width: auto;
     margin-top: 350px;
     margin-left: 50px;
   }
-  .Choose .choose-us {
+.Choose .choose-us {
     display: block;
   }
-  .Choose .choose-us h3 {
+.Choose .choose-us h3 {
     font-family: "DM Sans", sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
   }
-  .Choose .choose-us .column-item {
+.Choose .choose-us .column-item {
     padding: 20px;
   }
-  .Choose .choose-us .column-item .columni {
+.Choose .choose-us .column-item .columni {
     padding-top: 20px;
     position: relative;
     display: flex;
     justify-content: end;
   }
-  .Choose .choose-us .column-item .columni i {
+.Choose .choose-us .column-item .columni i {
     border-radius: 25px;
     border: 1px solid #c7c7c7;
     align-items: center;
@@ -48,7 +48,7 @@
     position: absolute;
     left: 20px;
   }
-  .Choose .choose-us .column-item .columni .text-col {
+.Choose .choose-us .column-item .columni .text-col {
     margin-right: 200px;
   }
   
