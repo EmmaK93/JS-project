@@ -9,7 +9,8 @@ const Forms = () => {
     const [email, setEmail] = useState('')
     const [emailError, setEmailError] = useState(false)
     const [message, setMessage] = useState('')
-    const [errorMessage, setErrorMessage]= useState(false)
+    const [messageError, setMessageError]= useState(false)
+    
 
     const validLength=(value, minLength=2)=>{
         
@@ -30,21 +31,21 @@ const Forms = () => {
     }
 
     const handleChange =(e)=>{
-        switch (e.target.type){
-            case "text":
+        switch (e.target.id){
+            case 'name':
                 setName(e.target.value)
                 setNameError(validLength(e.target.value))
 
             break
-            case "email":
+            case 'email':
                 setEmail(e.target.value)
                 setEmailError(validateEmail(e.target.value))
             break
-
-            case "message":
+            case 'message':
                 setMessage(e.target.value)
-                setErrorMessage(validLength(e.target.value))
+                setMessageError(validLength(e.target.value))
             break
+
         }
 
 
@@ -55,32 +56,59 @@ const Forms = () => {
 
     const handleSubmit = async (e)=>{
         e.preventDefault()
+        const users = {name, email, message}
+        const json = JSON.stringify(users)
         
-        const user = {name, email, message}
-        const json= JSON.stringify(user)
-        console.log(json)
+        
 
-        const result= await fetch('https://win23.azurewebsites.net/api/users', {
+        for (let element of e.target){
+
+            switch (element.id){
+                case 'name':
+                    setName(element.value)
+                    setNameError(validLength(element.value))
+                break
+                case 'email':
+                    setEmail(element.value)
+                    setEmailError(validateEmail(element.value))
+                break
+                case 'message':
+                setMessage(element.value)
+                setMessageError(validLength(element.value))
+            break
+    
+            }
+
+        }
+     
+
+        if (!nameError && !emailError && !messageError){
+
+            const result= await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'
             },
             body: json
-        },[])
-
-        
-
-        switch(result.status){
-            case 201:
-                alert('Användare skapas')
-                clearForms()
-            break
-            case 400:
-                console.log (`Felmeddelandet är: ${await result.text()}`)
-            break
-            default:
-                console.log ('Annat fel')
+                }, [])
+            
+        if (result.status ===200){
+            alert('Användare skapas')
+            clearForms()
         }
+        else if(result.status===400)
+                console.log('Problem 400')
+            
+        else if(result.status===409)
+                console.log('Problem 409')
+            
+        else
+            console.log(`Något gick fel. Felmeddelandet är ${await result.text()}`)
+        }
+
+        }
+        
+    
 
         const clearForms =()=>{
             setName('')
@@ -95,19 +123,19 @@ const Forms = () => {
             <h2>Leave us a message for any information.</h2>
         <form className="forms" onSubmit={handleSubmit} noValidate>
             <div className="mb-5">
-                <label className={`${nameError ? 'error':''}`}> {`${nameError ? 'För- och efternamn måste anges':''}`}</label>
-                <input id="name" className="info-form" type="text"  placeholder="För- och efternamn..." required value={name} onChange={(e)=>handleChange(e)}/>
+                <label className={`${nameError ? 'error':''}`}>{`${nameError ? 'För- och efternamn måste anges':''}`}</label>
+                <input id="name" name="name" className="info-form" type="text"  placeholder="För- och efternamn..." required value={name} onChange={(e)=>handleChange(e)}/>
             </div>
             <div className="mb-5">
                 <label className={`${emailError ? 'error':''}`}>{`${emailError ? 'E-postadress måste vara giltig':''}`}</label>
-                <input id="email" className="info-form" type="email" placeholder="Epost..." required value={email} onChange={(e)=>handleChange(e)}/>
+                <input id="email" name="email" className="info-form" type="email" placeholder="E-post..." required value={email} onChange={(e)=>handleChange(e)}/>
             </div>
             <div className="mb-5">
-                <label className={`${errorMessage ? 'error':''}`}>{`${errorMessage ? 'Meddelande måste innehålla minst 2 tecken':''}`}</label>
-                <textarea id="message" className="info-form" type="text"  placeholder="Meddelande..." required value={message} onChange={(e)=>handleChange(e)}></textarea> 
+                <label className={`${messageError ? 'error':''}`}>{`${messageError ? 'Meddelande måste innehålla minst 2 tecken':''}`}</label>
+                <input id="message" name="message" className="info-form" type="text" placeholder="Meddelande..." required value={message} onChange={(e)=>handleChange(e)}/>
             </div>
            <div className='mb-5'>
-            <button id="submit-btn" type="submit"className="info-form" required>Skicka</button>
+            <button id="submit-btn" type="submit" className="info-form" required>Skicka</button>
             </div>
         </form>
     </section>

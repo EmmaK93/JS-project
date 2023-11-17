@@ -12,10 +12,10 @@ const Contact = () => {
     
     <main>
     <section className="container">
-            <div>
+            {/* <div className='link-text'>
                 <a href="/index.html"> Home</a>
                 <a href="/contact.html">Contact</a>
-            </div>
+            </div> */}
             <div>   
                 <h1>Let's Connect</h1>
             </div>
