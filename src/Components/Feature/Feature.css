@@ -17,7 +17,7 @@
   .Feature-sec .container.Features .section-title a:hover {
     color: #F0EFE9;
   }
-  .Feature-sec .container.Features .grid-container {
+  .Feature-sec .container .Features .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 120px;

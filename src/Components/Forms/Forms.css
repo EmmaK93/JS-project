@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.form-input{
+    background-color: #F0EFE9;
+    border: 1px solid black;
+    padding: 40px;
+    display: block;
+  }
+
+.form-input h2 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+.form-input .forms input{
+    width: 100%; 
+    padding: 10px;
+    align-items: center;
+    
+  }
+.form-input .forms .error{
+    color: red;
+    border: 1px solid red;
+    background-color: rgb(250, 215, 215);
+  }
+.form-input .forms #submit-btn {
+    
+    padding: 12px;
+  }

@@ -1,0 +1,16 @@
+.container h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container .contact-box{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    margin-bottom: 50px;
+}
+.container .contact-box .box{
+    border: 1px solid #acacac;
+    margin: 10px;
+    padding: 20px 50px;
+}
