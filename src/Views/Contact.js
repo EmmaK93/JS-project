@@ -1,9 +1,10 @@
-import React from 'react'
-import Header from '../Components/Header/Header'
-import FooterSection from '../Components/Footer/FooterSection'
-import Forms from '../Components/Forms/Forms'
-import Maps from '../Components/Maps/Maps'
-import './Contact.css'
+import React from 'react';
+import Header from '../Components/Header/Header';
+import FooterSection from '../Components/Footer/FooterSection';
+import Forms from '../Components/Forms/Forms';
+import Maps from '../Components/Maps/Maps';
+import './Contact.css';
+import img_WhiteLines from '../Assets/images/vit-linje-v.svg';
 
 const Contact = () => {
   return (
@@ -11,11 +12,12 @@ const Contact = () => {
     <Header/>
     
     <main>
-    <section className="container">
-            {/* <div className='link-text'>
+    <section className="top-content">
+        <img className="background-lines" src={img_WhiteLines} alt=""/>
+            <div className="container link-text">
                 <a href="/index.html"> Home</a>
                 <a href="/contact.html">Contact</a>
-            </div> */}
+            </div>
             <div>   
                 <h1>Let's Connect</h1>
             </div>
