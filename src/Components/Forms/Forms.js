@@ -92,29 +92,26 @@ const Forms = () => {
             body: json
                 }, [])
             
-        if (result.status ===200){
-            alert('Användare skapas')
-            clearForms()
-        }
+        if (result.status ===200)
+            alert('200 ok')
+        
+        else if(result.status===201)
+                console.log('Ny användare registrerad')
+
         else if(result.status===400)
-                console.log('Problem 400')
+            console.log('Något gick fel')
             
         else if(result.status===409)
-                console.log('Problem 409')
+                console.log('Problem 409, användare finns redan')
             
         else
             console.log(`Något gick fel. Felmeddelandet är ${await result.text()}`)
-        }
-
-        
-        
     
-
-        const clearForms =()=>{
-            setName('')
-            setEmail('')
-            setMessage('')
+        
+        
         }
+
+
     }
 
   return (
