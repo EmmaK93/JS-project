@@ -1,6 +1,8 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
+// Testade bara för skoj skull vad jag kunde hitta på nätet.
+
 const Maps = () => {
   return (
     <>
