@@ -9,7 +9,6 @@ import './Article.css'
 import img_art1 from '../../Assets/images/art.1.png'
 import img_art2 from '../../Assets/images/art.2.png'
 import img_art3 from '../../Assets/images/art.3.png'
-import { Link } from 'react-router-dom'
 import Articlebox from './Articlebox'
 
 
