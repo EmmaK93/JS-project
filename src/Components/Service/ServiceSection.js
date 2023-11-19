@@ -18,14 +18,14 @@ const ServiceSection = () => {
                 <TitleSection smallTitle="Our Services" Title="We Provide The Best Service For Consulting"/>
             <div className="boxtext">
                 
-                <BoxItem Title= "Business Advice" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/Services/Businessadvice"/>
-                <BoxItem Title= "Startup Business" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/Services/Startupbusiness"/>
-                <BoxItem Title= "Financial Advice" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/Services/Financialadvice"/>
-                <BoxItem Title= "Risk Management" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/Services/Riskmanagement"/>
+                <BoxItem Title= "Business Advice" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/"/>
+                <BoxItem Title= "Startup Business" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/"/>
+                <BoxItem Title= "Financial Advice" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/"/>
+                <BoxItem Title= "Risk Management" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/"/>
                 
             </div>
             <div className="Btn-sec">
-                <Button typw="Trans" Title="Browse Services" url="/Services/Browseservices"/>
+                <Button type="Trans" Title="Browse Services" url="/Services/Browseservices"/>
             </div>
             
         </div>
