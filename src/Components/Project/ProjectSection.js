@@ -9,6 +9,7 @@ import img_business1 from '../../Assets/images/imgbusn1.png'
 import img_business3 from '../../Assets/images/imgbusn3.png'
 import img_business2 from '../../Assets/images/imgbusn2.png'
 import img_business4 from '../../Assets/images/imgbusn4.png'
+import Projectbox from './Projectbox'
 
 
 
@@ -22,34 +23,13 @@ const ProjectSection = () => {
             <TitleSection smallTitle="Project & Case Studies" Title="Let's Looks Our Global Projects"/>
         <div className="grid-project">
         
-   
-            <div className="grid-pic">
-                <a href="#" target="_blank"><img src={img_business1} alt="Man reading a newspaper"/></a>
-                <h3>Grow your business</h3>
-                <a href="/Projects/readmore">Read more<i className="fa-solid fa-square-arrow-up-right"></i></a>
-                
-            </div>
-            <div className="grid-pic">
-                <a href="/Projects/readmore" target="_blank"><img src={img_business3} alt="Picture of office supplies, a notebook, a pen and a mug on a desk"/></a>
-                <h3>Educate your employees to get better results</h3>
-                <a href="#">Read more<i className="fa-solid fa-square-arrow-up-right"></i></a>
-
-            </div>
-            <div className="grid-pic">
-                <a href="/Projects/readmore" target="_blank"><img src={img_business2} alt="Picture of different communication devices, a tablet and a smart watch. Also a pair of glasses"/></a>
-                <h3>Why your client needs a responsive website</h3>
-                <a href="#">Read more<i className="fa-solid fa-square-arrow-up-right"></i></a>
-
-            </div>
-            <div className="grid-pic">
-                <a href="/Projects/readmore" target="_blank"><img src={img_business4} alt="Picture of a laptop screen showing business graphs and charts"/></a>
-                <h3>Business Insights is a important piece of your business</h3>
-                <a href="#">Read more<i className="fa-solid fa-square-arrow-up-right"></i></a>
-
-            </div>
-        
-
+            <Projectbox image={img_business1} imgDescription="Man reading a newspaper" Title="Grow your business"/>
+            <Projectbox image={img_business3} imgDescription="Picture of office supplies, a notebook, a pen and a mug on a desk" Title="Educate your employees to get better results"/>
+            <Projectbox image={img_business2} imgDescription="Picture of different communication devices, a tablet and a smart watch. Also a pair of glasses" Title="Why your client needs a responsive website"/>
+            <Projectbox image={img_business4} imgDescription="Picture of a laptop screen showing business graphs and charts" Title="Business Insights is a important piece of your business"/>
+            
         </div>
+
         <div className="Btn-sec">
             <Button type="black" Title="All Recent Projects" url="/Project/Moreprojects"/>
         </div>
