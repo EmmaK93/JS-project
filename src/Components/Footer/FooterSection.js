@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 
 import img_WhiteLinesFooter from '../../Assets/images/vit-linje-footer.svg'
@@ -19,37 +20,37 @@ const FooterSection = () => {
                     <div className="fot-box">
                         <h3>Company</h3>
                         <ul>
-                            <a href="#"><li>About</li></a>
-                            <a href="#"><li>Features</li></a>
-                            <a href="#"><li>Works</li></a>
-                            <a href="#"><li>Career</li></a>
+                            <Link to="*"><li>About</li></Link>
+                            <Link to="*"><li>Features</li></Link>
+                            <Link to="*"><li>Works</li></Link>
+                            <Link to="*"><li>Career</li></Link>
                         </ul>
                     </div>
                     <div className="fot-box">
                         <h3>Help</h3>
                         <ul>
-                            <a href="#"><li>Customer Support</li></a>
-                            <a href="#"><li>Delivery Details</li></a>
-                            <a href="#"><li>Terms & Conditions</li></a>
-                            <a href="#"><li>Privacy Policy</li></a>
+                            <Link to="*"><li>Customer Support</li></Link>
+                            <Link to="*"><li>Delivery Details</li></Link>
+                            <Link to="*"><li>Terms & Conditions</li></Link>
+                            <Link to="*"><li>Privacy Policy</li></Link>
                         </ul>
                     </div>
                     <div className="fot-box">
                         <h3>Resources</h3>
                         <ul>
-                            <a href="#"><li>Free eBook</li></a>
-                            <a href="#"><li>Development Tutorial</li></a>
-                            <a href="#"><li>How to - Blog</li></a>
-                            <a href="#"><li>Youtube Playlist</li></a>
+                            <Link to="*"><li>Free eBook</li></Link>
+                            <Link to="*"><li>Development Tutorial</li></Link>
+                            <Link to="*"><li>How to - Blog</li></Link>
+                            <Link to="*"><li>Youtube Playlist</li></Link>
                         </ul>
                     </div>
                     <div className="fot-box">
                         <h3>Link</h3>
                         <ul>
-                            <a href="#"><li>Free eBooks</li></a>
-                            <a href="#"><li>Development Tutorial</li></a>
-                            <a href="#"><li>How to - Blog</li></a>
-                            <a href="#"><li>Youtube Playlist</li></a>
+                            <Link to="*"><li>Free eBooks</li></Link>
+                            <Link to="*"><li>Development Tutorial</li></Link>
+                            <Link to="*"><li>How to - Blog</li></Link>
+                            <Link to="*"><li>Youtube Playlist</li></Link>
                         </ul>
                     </div>
                 </div>

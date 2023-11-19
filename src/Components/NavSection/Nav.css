@@ -76,12 +76,17 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-  header .container .menu .bottom-menu nav a {
+  header .container .menu .bottom-menu .Navigation a {
     color: #191919;
     text-decoration: none;
     margin-right: 30px;
   }
-  header .container .menu .bottom-menu nav a:hover {
+  header .container .menu .bottom-menu .Navigation a:hover {
     color: rgb(102, 100, 100);
     text-decoration: underline;
+  }
+  header .container .menu .bottom-menu .Navigation a.active{
+    color:#F94D1C;
+    text-decoration: underline;
+
   }

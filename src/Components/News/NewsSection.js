@@ -13,8 +13,8 @@ const NewsSection = () => {
                 <h2>Get News Updates By Signup</h2>
             </div>
             <div>
-                <input type="text"/>
-                <Button type="yellow" Title="Subscribe" url="/Articles/News/Subscribe"/>
+                <input type="email" placeholder="E-postadress..."/>
+                <Button type="yellow" Title="Subscribe" url="/"/>
                 
             </div>
         </div>

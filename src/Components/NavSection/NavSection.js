@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../Generics/Buttons/Button';
-
+import { Link, NavLink } from 'react-router-dom';
 import './Nav.css';
 
 
@@ -11,8 +11,8 @@ const NavSection = () => {
   return (
     <header>
         <div className="container">
-            <a href="/"><img src={img_logotype} alt="Crito Logotype"/></a>
-            <a href="#" target="_blank"><button className="menu-bar"><i className="fa-solid fa-ellipsis"></i></button></a>
+            <Link to="/"><img src={img_logotype} alt="Crito Logotype"/></Link>
+            <Link to="*" target="_blank"><button className="menu-bar"><i className="fa-solid fa-ellipsis"></i></button></Link>
             <div className="menu">
                 <div className="top-menu">
                     
@@ -32,11 +32,11 @@ const NavSection = () => {
 
                 <div className="bottom-menu">  
                          
-                    <nav>
-                        <a href="./" target="_blank">Home</a>
-                        <a href="*" target="_blank">Service</a>
-                        <a href="*"target="_blank">News</a>
-                        <a href="/contact" target="_blank">Contact</a>
+                    <nav className="Navigation">
+                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="*">News</NavLink>
+                        <NavLink to="*">Services</NavLink>
+                        <NavLink to="/contact">Contact</NavLink>
                     </nav>    
                     
                     <div>

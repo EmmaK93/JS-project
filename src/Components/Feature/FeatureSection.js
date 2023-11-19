@@ -17,10 +17,10 @@ const FeatureSection = () => {
             </div>
             <div className="grid-container">
 
-                <GridItem Title="Business Advice" smallTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit." url="/services/Businessadvice"/>
-                <GridItem Title="Startup Business" smallTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit." url="/services/Startupbusiness"/>
-                <GridItem Title="Financial Advice" smallTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit." url="/services/Financialadvice"/>
-                <GridItem Title="Risk Management" smallTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit." url="/services/Riskmanagement"/>
+                <GridItem Title="Business Advice" smallTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit." url="/services/Businessadvice" icon="fa-regular fa-handshake"/>
+                <GridItem Title="Startup Business" smallTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit." url="/services/Startupbusiness"icon="fa-regular fa-lightbulb"/>
+                <GridItem Title="Financial Advice" smallTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit." url="/services/Financialadvice" icon="fa-solid fa-chart-line"/>
+                <GridItem Title="Risk Management" smallTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit." url="/services/Riskmanagement" icon="fa-solid fa-gear"/>
             
             </div>
 

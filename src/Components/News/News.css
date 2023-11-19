@@ -22,10 +22,7 @@
 }
 .News .container input {
   border-radius: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px 15px 10px 15px;
   margin-right: 10px;
   border-color: white;
 }

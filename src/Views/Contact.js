@@ -5,6 +5,7 @@ import Forms from '../Components/Forms/Forms';
 import Maps from '../Components/Maps/Maps';
 import './Contact.css';
 import img_WhiteLines from '../Assets/images/vit-linje-v.svg';
+import { Link } from 'react-router-dom';
 
 
 const Contact = () => {
@@ -16,8 +17,8 @@ const Contact = () => {
     <section className="top-content">
         <img className="background-lines" src={img_WhiteLines} alt=""/>
             <div className="container link-text">
-                <a href="/"> Home</a>
-                <a href="/contact">Contact</a>
+                <Link to="/"> Home</Link>
+                <Link to="/contact">Contact</Link>
             </div>
             <div>   
                 <h1>Let's Connect</h1>

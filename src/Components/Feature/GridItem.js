@@ -1,14 +1,18 @@
 import React from 'react'
+import "./Feature.css"
+import { Link } from 'react-router-dom'
 
-const GridItem = ({Title, smallTitle, url}) => {
+const GridItem = ({Title, smallTitle, url, icon}) => {
   return (
-    <a href={url} target="_blank">
+    
+    <Link to={url} target="_blank">
                 <div className="grid-item">
-                    <i className="fa-regular fa-handshake"></i>
+                    <i className={icon}></i>
                     <h3>{Title}</h3>
                     <p>{smallTitle}</p>
                 </div>
-            </a>
+            </Link>
+            
   )
 }
 
