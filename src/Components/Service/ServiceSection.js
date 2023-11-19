@@ -25,7 +25,7 @@ const ServiceSection = () => {
                 
             </div>
             <div className="Btn-sec">
-                <Button type="Trans" Title="Browse Services" url="/Services/Browseservices"/>
+                <Button type="Trans" Title="Browse Services" url="/"/>
             </div>
             
         </div>

@@ -20,8 +20,8 @@ const ShowCaseSection = () => {
             <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
             
             <div className="button">
-              <Button type="yellow" Title="Get consulting" url="/Services/Getconsulting"/>
-              <Button type="Trans" Title="Learn more" url="/Services/Learnmore"/>
+              <Button type="yellow" Title="Get consulting" url="/"/>
+              <Button type="Trans" Title="Learn more" url="/"/>
             </div>
           
           </div>

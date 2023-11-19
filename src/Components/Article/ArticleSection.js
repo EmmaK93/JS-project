@@ -20,7 +20,7 @@ const ArticleSection = () => {
                     <TitleSection smallTitle="Article & News" Title="Get Every Single Articles & News"/>
                     
                     <div>
-                        <Button type="Trans" Title="Browse Articles" url="/News/Browsearticles"/>
+                        <Button type="Trans" Title="Browse Articles" url="/"/>
                     </div>
 
                 </div>

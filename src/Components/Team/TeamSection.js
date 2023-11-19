@@ -20,7 +20,7 @@ const TeamSection = () => {
             <div className="team-start">
                 <TitleSection smallTitle="Meet Our Team" Title="Experience Team Members"/>
                 <div>
-                    <Button type="Trans" Title="Browse Team" url="/Team/Teammembers"/>
+                    <Button type="Trans" Title="Browse Team" url="/"/>
                 </div>
             </div>
             <div className="presentation">

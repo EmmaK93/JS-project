@@ -31,7 +31,7 @@ const ProjectSection = () => {
         </div>
 
         <div className="Btn-sec">
-            <Button type="black" Title="All Recent Projects" url="/Project/Moreprojects"/>
+            <Button type="black" Title="All Recent Projects" url="/"/>
         </div>
     </div>
 </section>

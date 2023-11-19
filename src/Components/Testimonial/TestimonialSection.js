@@ -27,7 +27,7 @@ const TestimonialSection = () => {
                
             </div>    
             <div className="Btn-sec">
-                <Button type="black" Title="All Reviews" url="/Reviews"/>
+                <Button type="black" Title="All Reviews" url="/"/>
             </div>
         </div>
      

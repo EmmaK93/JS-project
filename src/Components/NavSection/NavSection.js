@@ -40,7 +40,7 @@ const NavSection = () => {
                     </nav>    
                     
                     <div>
-                        <Button type="yellow" Title="Log in" url="/Home/login"/>
+                        <Button type="yellow" Title="Log in" url="/"/>
                     </div>
                 </div>
             </div>
