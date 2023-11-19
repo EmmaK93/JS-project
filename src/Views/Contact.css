@@ -17,6 +17,16 @@
 .top-content .link-text{
     display:flex;
     justify-content: center;
+    
+}
+.top-content .link-text a{
+    text-decoration: none;
+    color: #191919;
+    margin:10px 10px;
+}
+.top-content .link-text a:hover{
+    color:#cfcfcf;
+
 }
 .top-content h1{
     display: flex;

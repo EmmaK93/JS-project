@@ -11,7 +11,7 @@ const NavSection = () => {
   return (
     <header>
         <div className="container">
-            <a href="index.html"><img src={img_logotype} alt="Crito Logotype"/></a>
+            <a href="/"><img src={img_logotype} alt="Crito Logotype"/></a>
             <a href="#" target="_blank"><button className="menu-bar"><i className="fa-solid fa-ellipsis"></i></button></a>
             <div className="menu">
                 <div className="top-menu">
@@ -34,9 +34,9 @@ const NavSection = () => {
                          
                     <nav>
                         <a href="./" target="_blank">Home</a>
-                        <a href="/HTML/service.html" target="_blank">Service</a>
-                        <a href="/HTML/news.html"target="_blank">News</a>
-                        <a href="./contact" target="_blank">Contact</a>
+                        <a href="*" target="_blank">Service</a>
+                        <a href="*"target="_blank">News</a>
+                        <a href="/contact" target="_blank">Contact</a>
                     </nav>    
                     
                     <div>
